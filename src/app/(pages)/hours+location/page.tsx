@@ -68,26 +68,34 @@ export default function HoursLocationPage() {
 
         {/* images */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
-          <img
-            src={"image28.jpg"}
-            alt=""
-            className="object-cover h-96 rounded-lg"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-            data-aos-once="true"
-          />
-          <img
-            src={"image29.jpg"}
-            alt=""
-            className="object-cover h-96 rounded-lg"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-            data-aos-once="true"
-          />
+          <div className="flex flex-col">
+            <img
+              src={"image28.jpg"}
+              alt=""
+              className="object-cover h-96 rounded-lg"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-once="true"
+            />
+            <figure className="text-xs">Photo by from Unsplash</figure>
+          </div>
+          <div className="flex flex-col">
+            <img
+              src={"image29.jpg"}
+              alt=""
+              className="object-cover h-96 rounded-lg"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-once="true"
+            />
+            <figure className="text-xs">
+              Photo by Wes Hicks from Unsplash
+            </figure>
+          </div>
         </div>
       </section>
     </PageLayout>

@@ -10,13 +10,12 @@ const menuLinks = ["menu", "about-us", "hours+location"];
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const navLinkEl = menuLinks.map((menuLink) => (
-    <NavLink menuLink={menuLink} setIsOpen={setIsOpen} />
+  const navLinkEl = menuLinks.map((menuLink, index) => (
+    <NavLink key={index} menuLink={menuLink} setIsOpen={setIsOpen} />
   ));
-  console.log(isOpen);
+
   const handleClick = () => {
     setIsOpen((prev) => !prev);
-    console.log(isOpen);
   };
   return (
     <div className="">

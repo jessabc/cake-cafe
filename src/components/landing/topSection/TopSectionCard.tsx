@@ -49,6 +49,9 @@ export default function TopSectionCard({ card, index }: Props) {
           <CardTitle>{card.title}</CardTitle>
         </CardHeader>
         <CardContent>
+          <p className="uppercase text-xs font-semibold line-clamp-1">
+            Photo by {card.attribute} from Unsplash
+          </p>
           <p className="">{card.paragraph}</p>
         </CardContent>
         <CardFooter>

@@ -1,11 +1,11 @@
+/* // https://blog.devgenius.io/diy-scrollspy-4f1c270cafaf */
+
 html {
   scroll-behavior: smooth;
 }
 
 section {
-  background-size: cover;
   flex: 1 0 100%;
-  margin: 1rem;
 }
 
 .active {

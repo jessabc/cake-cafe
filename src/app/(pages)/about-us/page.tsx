@@ -32,26 +32,36 @@ export default function AboutUsPage() {
         ))}
       </section>
       <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
-        <img
-          src={aboutUsData.image1}
-          alt=""
-          className="object-cover h-96 rounded-lg"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="600"
-          data-aos-once="true"
-        />
-        <img
-          src={aboutUsData.image2}
-          alt=""
-          className="object-cover h-96 rounded-lg"
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="600"
-          data-aos-once="true"
-        />
+        <div className="flex flex-col">
+          <img
+            src={aboutUsData.image1}
+            alt=""
+            className="object-cover h-96 rounded-lg"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          />
+          <figure className="text-xs">
+            Photo by Sebastian Coman Photography from Unsplash
+          </figure>
+        </div>
+        <div className="flex flex-col">
+          <img
+            src={aboutUsData.image2}
+            alt=""
+            className="object-cover h-96 rounded-lg"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          />
+          <figure className="text-xs">
+            Photo by Harper Nguyen from Unsplash
+          </figure>
+        </div>
       </div>
     </PageLayout>
   );

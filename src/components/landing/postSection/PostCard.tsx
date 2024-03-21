@@ -21,11 +21,10 @@ export default function PostCard({ post }: Props) {
       className="hover:-translate-y-3 duration-700"
     >
       <Card
-        data-aos="fade-down"
+        data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
-        data-aos-once="true"
       >
         <div>
           <img
@@ -39,6 +38,9 @@ export default function PostCard({ post }: Props) {
           <CardDescription>{post.date}</CardDescription>
         </CardHeader>
         <CardContent>
+          <p className="uppercase text-xs font-semibold line-clamp-1">
+            Photo by {post.attribute} from Unsplash
+          </p>
           <p className="line-clamp-4">{post.paragraph}</p>
         </CardContent>
       </Card>

@@ -10,7 +10,7 @@ export default function Slide({ slide }: Props) {
     <div className="hs-carousel-slide ">
       <div
         className="flex justify-center h-full bg-violet-500 p-6 relative"
-        data-aos="fade-down"
+        data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"

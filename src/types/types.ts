@@ -3,6 +3,7 @@ export interface ITopSectionCard {
   paragraph: string;
   buttonText: string;
   image: string;
+  attribute: string;
   link: string;
 }
 
@@ -14,6 +15,7 @@ export type Slide = {
 export type Post = {
   id: number;
   image: string;
+  attribute: string;
   date: string;
   title: string;
   paragraph: string;

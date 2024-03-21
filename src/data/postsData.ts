@@ -2,6 +2,7 @@ export const postsData = [
   {
     id: 1,
     image: "image14.jpg",
+    attribute: "Bruna Branco",
     date: "January 4, 2024",
     title: "SCRUMPTIOUS SUGARY DELICIOUS DESSERTS. CUPCAKES DREAM!",
     paragraph:
@@ -15,6 +16,7 @@ export const postsData = [
   {
     id: 2,
     image: "image16.jpg",
+    attribute: "Diliara Garifullina",
     date: "January 28, 2024",
     title: "OAT SUGARY JELLY DESSERTS. PIE DREAM!",
     paragraph:
@@ -28,6 +30,7 @@ export const postsData = [
   {
     id: 3,
     image: "image15.jpg",
+    attribute: "Heather Barnes",
     date: "February 5, 2024",
     title: "SOUFFLE SUGARY CARROT DESSERTS. DANISH DREAM!",
     paragraph:
@@ -41,6 +44,7 @@ export const postsData = [
   {
     id: 4,
     image: "image17.jpg",
+    attribute: "Brooke Lark",
     date: "February 19, 2024",
     title: "BROWNIE SUGARY TOFFEE DESSERTS. TIRAMISU DREAM!",
     paragraph:
@@ -54,6 +58,7 @@ export const postsData = [
   {
     id: 5,
     image: "image19.jpg",
+    attribute: "Dessy Dimcheva",
     date: "March 2, 2024",
     title: "TART SUGARY CROISSANT DESSERTS. COOKIE TOPPING!",
     paragraph:
@@ -67,6 +72,7 @@ export const postsData = [
   {
     id: 6,
     image: "image20.jpg",
+    attribute: "Caramel",
     date: "March 25, 2024",
     title: "CUPCAKE SUGARY CANDY CHOCOLATE. SWEET TOFFEE!",
     paragraph:

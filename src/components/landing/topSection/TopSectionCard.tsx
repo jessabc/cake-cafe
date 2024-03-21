@@ -27,7 +27,10 @@ export default function TopSectionCard({ card, index }: Props) {
         data-aos-duration="600"
         data-aos-once="true"
       >
-        <img src={card.image} className="object-cover w-full sm:h-96 lg:h-72" />
+        <img
+          src={card.image}
+          className="object-cover w-full sm:h-96 lg:h-72 rounded-lg"
+        />
       </div>
 
       <Card

@@ -29,7 +29,7 @@ export default function Nav() {
       <div className={`menu ${isOpen ? "menu-toggle " : " "}`}></div>
 
       <div
-        className={`flex flex-col gap-5 links ${
+        className={`flex flex-col gap-8 links ${
           isOpen ? " opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useLayoutEffect } from "react";
 import { ScrollSpy } from "@/components/scrollspy/ScrollSpy";
+import "../shared/Nav/nav.css";
 
 // https://blog.devgenius.io/diy-scrollspy-4f1c270cafaf
 
@@ -54,7 +55,7 @@ const NavMenu = ({ options }) => {
               href={`#${option.hash}`}
               onClick={(e) => onClick(e)}
               data-scrollspy-id={option.hash}
-              className="font-semibold block p-4 hover:text-violet-400"
+              className="font-bold block p-4 animate-character"
             >
               {option.title}
             </a>

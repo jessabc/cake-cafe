@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { Post } from "@/types/types";
 
 interface Props {
   post: Post;
@@ -27,7 +28,11 @@ export default function PostCard({ post }: Props) {
         data-aos-once="true"
       >
         <div>
-          <img src={post.image} alt="" className="object-cover w-full h-56" />
+          <img
+            src={post.image}
+            alt=""
+            className="object-cover w-full h-56 rounded-tl-lg rounded-tr-lg"
+          />
         </div>
         <CardHeader>
           <CardTitle className="line-clamp-2">{post.title}</CardTitle>

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function HoursLocationPage() {
-  const hoursEl = hours.map((item) => {
+  const hoursEl = hours.map((item, index) => {
     return (
       <>
-        <span>{item.day}</span>
+        <span key={index}>{item.day}</span>
         <span>
           {item.open}
           {parseInt(item.open) > 11 ? "PM" : "AM"}
@@ -38,7 +38,9 @@ export default function HoursLocationPage() {
             data-aos-duration="600"
             data-aos-once="true"
           >
-            <p className="font-bold">{address.title}</p>
+            <p className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-violet-300 to-violet-800">
+              {address.title}
+            </p>
             <p>{address.street}</p>
             <p>{address.city}</p>
             <p>{address.phone}</p>
@@ -52,7 +54,9 @@ export default function HoursLocationPage() {
             data-aos-duration="600"
             data-aos-once="true"
           >
-            <p className="font-bold">HOURS</p>
+            <p className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-violet-300 to-violet-800">
+              HOURS
+            </p>
             <div className="grid grid-cols-3 gap-1 gap-x-2">
               <span className="font-semibold text-sm">DAY</span>
               <span className="font-semibold text-sm">OPEN</span>

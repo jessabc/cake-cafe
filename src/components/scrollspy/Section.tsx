@@ -11,7 +11,7 @@ export default function Section({ section }: Props) {
       id={section.header}
       data-nav-title={section.header}
       data-scrollspy
-      className=" bg-violet-50  py-10 px-10"
+      className=" bg-gradient-to-r from-violet-50 to-violet-200  py-10 px-10"
       data-aos="fade-up"
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"

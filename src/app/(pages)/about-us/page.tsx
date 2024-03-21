@@ -25,8 +25,10 @@ export default function AboutUsPage() {
           {aboutUsData.title}
         </h2>
 
-        {paragraphs.map((paragraph) => (
-          <p className="leading-7 [&:not(:first-child)]:mt-6">{paragraph}</p>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="leading-7 [&:not(:first-child)]:mt-6">
+            {paragraph}
+          </p>
         ))}
       </section>
       <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">

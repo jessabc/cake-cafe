@@ -9,6 +9,8 @@ section {
 }
 
 .active {
-  border-bottom: 3px solid #7c3aed;
-  font-weight: bolder;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(0.25turn, #a781e9, #9c6fe9, #7c3aed);
+  border-image-slice: 1;
+  width: 100%;
 }

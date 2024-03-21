@@ -13,10 +13,7 @@ This is a work in progress. I would like to add a takeout feature (similiar to a
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Acknowledgments](#acknowledgments)
+ 
 
 
 ## Overview

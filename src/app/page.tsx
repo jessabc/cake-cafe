@@ -1,7 +1,6 @@
 import Carousel from "@/components/landing/carousel/Carousel";
 import PostsSection from "@/components/landing/postSection/PostsSection";
 import TopSection from "@/components/landing/topSection/TopSection";
-import Image from "next/image";
 
 export default function Home() {
   return (

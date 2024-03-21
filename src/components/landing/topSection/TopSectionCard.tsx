@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ITopSectionCard } from "@/types/types";
 
 interface Props {
   card: ITopSectionCard;

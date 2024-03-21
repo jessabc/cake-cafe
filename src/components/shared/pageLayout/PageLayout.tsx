@@ -8,7 +8,13 @@ interface Props {
 export default function PageLayout({ header, children }: Props) {
   return (
     <div>
-      <div className="bg-gradient-to-r from-violet-300 to-violet-400 -mt-5 pt-28 pb-20 -mx-10 ">
+      <div
+        className="bg-gradient-to-r from-violet-300 to-violet-400 -mt-5 pt-28 pb-20 -mx-10 "
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <h2 className="text-4xl font-bold  text-center mt-10 text-violet-50 tracking-widest drop-shadow-xl">
           {header}
         </h2>

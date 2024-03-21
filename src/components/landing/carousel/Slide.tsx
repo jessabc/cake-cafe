@@ -1,4 +1,5 @@
 import React from "react";
+import { Slide } from "@/types/types";
 
 interface Props {
   slide: Slide;
@@ -7,7 +8,13 @@ interface Props {
 export default function Slide({ slide }: Props) {
   return (
     <div className="hs-carousel-slide ">
-      <div className="flex justify-center h-full bg-violet-500 p-6 relative  ">
+      <div
+        className="flex justify-center h-full bg-violet-500 p-6 relative"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <img
           src={slide.image}
           alt=""

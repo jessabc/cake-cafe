@@ -21,7 +21,7 @@ export default function PostCard({ post }: Props) {
       className="hover:-translate-y-3 duration-700"
     >
       <Card
-        data-aos="fade-up"
+        data-aos="fade-down"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"

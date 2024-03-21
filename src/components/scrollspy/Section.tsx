@@ -20,8 +20,8 @@ export default function Section({ section }) {
       </div>
 
       <ul className="flex flex-col gap-5">
-        {section.items.map((item) => (
-          <li>
+        {section.items.map((item, index) => (
+          <li key={index}>
             <p className="font-semibold">{item.name}</p>
             <p>{item.description}</p>
             <p className="italic">{item.price}</p>

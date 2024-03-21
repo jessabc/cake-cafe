@@ -13,26 +13,38 @@ const menuLinks = ["menu", "about-us", "hours+location"];
 
 export default function Hamburger() {
   const [linkClicked, setLinkClicked] = useState(false);
-  const inputElement = useRef();
+  const inputElement = useRef(false);
 
-  const handleClick = () => {
+  const handleClick = (event) => {
     console.log("clicked");
+    event.stopPropagation();
     console.log(inputElement.current.checked);
     inputElement.current.checked = false;
+
+    console.log(inputElement.current.checked);
   };
 
   const menuLinkEl = menuLinks.map((menuLink) => (
-    <MenuLink menuLink={menuLink} handleClick={handleClick} />
+    <MenuLink
+      menuLink={menuLink}
+      handleClick={handleClick}
+      inputElement={inputElement}
+    />
   ));
 
   return (
-    <label>
-      <input type="checkbox" className="" ref={inputElement} />
+    <label className="">
+      <input
+        type="checkbox"
+        className=""
+        ref={inputElement}
+        onChange={(e) => console.log(e.target.checked)}
+      />
       <span className="menu">
         {" "}
         <span className="hamburger"></span>{" "}
       </span>
-      <ul className="flex flex-col">
+      <ul className={` flex-col flex`}>
         {/* <li>
           {" "}
           <a href="#">Home</a>{" "}

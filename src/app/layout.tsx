@@ -10,6 +10,7 @@ import StickyFooter from "@/components/shared/stickyFooter/StickyFooter";
 import Hamburger from "@/components/shared/hamburger/Hamburger";
 import Link from "next/link";
 import Logo from "@/components/shared/Logo";
+import Nav from "@/components/shared/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,13 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${inter.className}`}>
+      <body className={` ${inter.className} overflow-x-hidden`}>
         {/* <StickyHeader /> */}
         <div className="flex justify-between ">
           <div className=" fixed z-50 pt-2 pl-4 text-violet-600 ">
             <Logo />
           </div>
-          <Hamburger />
+          {/* <Hamburger /> */}
+          <Nav />
         </div>
         {/* mt-20  mx-5 md:mx-10 */}
         <div className="">{children}</div>

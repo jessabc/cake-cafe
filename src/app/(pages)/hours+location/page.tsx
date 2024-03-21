@@ -71,7 +71,7 @@ export default function HoursLocationPage() {
           <img
             src={"image28.jpg"}
             alt=""
-            className="object-cover h-96"
+            className="object-cover h-96 rounded-lg"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
@@ -81,7 +81,7 @@ export default function HoursLocationPage() {
           <img
             src={"image29.jpg"}
             alt=""
-            className="object-cover h-96"
+            className="object-cover h-96 rounded-lg"
             data-aos="fade-left"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"

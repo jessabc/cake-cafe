@@ -11,7 +11,7 @@ export default function NavLink({ menuLink, setIsOpen }: Props) {
   return (
     <Link
       href={`/${menuLink}`}
-      className={`text-left font-bold mt-4 text-violet-600 text-3xl animate-character`}
+      className={`text-left font-bold mt-4 text-violet-600 text-3xl animate-character drop-shadow-xl`}
       onClick={() => setIsOpen(false)}
     >
       {menuLink.toUpperCase().replace("-", " ")}

@@ -55,7 +55,7 @@ const NavMenu = ({ options }) => {
               href={`#${option.hash}`}
               onClick={(e) => onClick(e)}
               data-scrollspy-id={option.hash}
-              className="font-bold block p-4 animate-character"
+              className="font-bold block p-4 animate-character tracking-widest"
             >
               {option.title}
             </a>

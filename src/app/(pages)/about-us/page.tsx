@@ -35,7 +35,7 @@ export default function AboutUsPage() {
         <img
           src={aboutUsData.image1}
           alt=""
-          className="object-cover h-96"
+          className="object-cover h-96 rounded-lg"
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
         <img
           src={aboutUsData.image2}
           alt=""
-          className="object-cover h-96"
+          className="object-cover h-96 rounded-lg"
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"

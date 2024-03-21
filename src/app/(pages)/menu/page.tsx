@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <PageLayout header={"MENU"}>
-      <ScrollSpyNav data={menu} />
+      <ScrollSpyNav menu={menu} />
     </PageLayout>
   );
 }

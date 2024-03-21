@@ -1,6 +1,6 @@
 export const carouselData = [
   {
-    image: "image23.jpg",
+    image: "image27.jpg",
     text: "chocolate loves dreaming",
   },
   {

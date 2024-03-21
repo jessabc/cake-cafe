@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
-// preline
 import PrelineScript from "./components/PrelineScript";
 import Footer from "@/components/shared/footer/Footer";
-import StickyFooter from "@/components/shared/stickyFooter/StickyFooter";
-
-import Hamburger from "@/components/shared/hamburger/Hamburger";
-import Link from "next/link";
 import Logo from "@/components/shared/Logo";
 import Nav from "@/components/shared/Nav/Nav";
+import { AOSInit } from "../lib/aos";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,16 +21,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${inter.className} overflow-x-hidden`}>
-        {/* <StickyHeader /> */}
+      <AOSInit />
+      <body
+        className={` ${inter.className} overflow-x-hidden overflow-y-auto
+        [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar-track]:rounded-full
+        [&::-webkit-scrollbar-track]:bg-gray-100
+        [&::-webkit-scrollbar-thumb]:rounded-full
+        [&::-webkit-scrollbar-thumb]:bg-gray-300
+        dark:[&::-webkit-scrollbar-track]:bg-slate-700
+        dark:[&::-webkit-scrollbar-thumb]:bg-slate-500`}
+      >
         <div className="flex justify-between ">
           <div className=" fixed z-50 pt-2 pl-4 text-violet-600 ">
             <Logo />
           </div>
-          {/* <Hamburger /> */}
           <Nav />
         </div>
-        {/* mt-20  mx-5 md:mx-10 */}
+
         <div className="">{children}</div>
 
         <Footer />

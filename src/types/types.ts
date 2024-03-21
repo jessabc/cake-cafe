@@ -1,4 +1,4 @@
-interface ITopSectionCard {
+export interface ITopSectionCard {
   title: string;
   paragraph: string;
   buttonText: string;
@@ -6,12 +6,12 @@ interface ITopSectionCard {
   link: string;
 }
 
-type Slide = {
+export type Slide = {
   image: string;
   text: string;
 };
 
-type Post = {
+export type Post = {
   id: number;
   image: string;
   date: string;
@@ -22,3 +22,16 @@ type Post = {
   readTime: string;
   authorImage: string;
 };
+
+export type Item = {
+  name: string;
+  description: string;
+  price: number;
+};
+
+export interface ISection {
+  header: string;
+  description: string;
+  svg: string;
+  items: Item[];
+}

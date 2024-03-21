@@ -1,6 +1,5 @@
 import React from "react";
 import { postsData } from "@/data/postsData";
-import Post from "./PostCard";
 import PostCard from "./PostCard";
 
 export default function PostsSection() {

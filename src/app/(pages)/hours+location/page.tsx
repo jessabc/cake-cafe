@@ -30,7 +30,14 @@ export default function HoursLocationPage() {
       <section className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 items-center md:flex-row  md:justify-center md:items-start md:gap-20">
           {/* address */}
-          <div className="flex flex-col">
+          <div
+            className="flex flex-col"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          >
             <p className="font-bold">{address.title}</p>
             <p>{address.street}</p>
             <p>{address.city}</p>
@@ -38,7 +45,13 @@ export default function HoursLocationPage() {
           </div>
 
           {/* hours */}
-          <div>
+          <div
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          >
             <p className="font-bold">HOURS</p>
             <div className="grid grid-cols-3 gap-1 gap-x-2">
               <span className="font-semibold text-sm">DAY</span>
@@ -51,8 +64,26 @@ export default function HoursLocationPage() {
 
         {/* images */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
-          <img src={"image21.jpg"} alt="" className="object-cover h-96" />
-          <img src={"image24.jpg"} alt="" className="object-cover h-96" />
+          <img
+            src={"image28.jpg"}
+            alt=""
+            className="object-cover h-96"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          />
+          <img
+            src={"image29.jpg"}
+            alt=""
+            className="object-cover h-96"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-once="true"
+          />
         </div>
       </section>
     </PageLayout>

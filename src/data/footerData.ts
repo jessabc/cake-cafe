@@ -44,21 +44,3 @@ export const hours = [
     close: "11:00",
   },
 ];
-// export const socials = [
-//     {
-//         image: 'icon-twitter',
-//         link: 'twitter'
-//     },
-//     {
-//         image: 'icon-facebook',
-//         link: 'facebook'
-//     },
-//     {
-//         image: 'icon-instagram',
-//         link: 'instagram'
-//     },
-//     {
-//         image: 'icon-spotify',
-//         link: 'spotify'
-//     },
-// ]

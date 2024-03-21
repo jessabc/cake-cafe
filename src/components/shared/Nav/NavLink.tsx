@@ -1,11 +1,16 @@
 import Link from "next/link";
 import React from "react";
 
-export default function NavLink({ menuLink, setIsOpen }) {
+interface Props {
+  menuLink: string;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function NavLink({ menuLink, setIsOpen }: Props) {
   return (
     <Link
       href={`/${menuLink}`}
-      className={`text-left font-semibold mt-4 text-violet-600 text-2xl `}
+      className={`text-left font-semibold mt-4 text-violet-600 text-2xl animate-character`}
       onClick={() => setIsOpen(false)}
     >
       {menuLink.toUpperCase().replace("-", " ")}

@@ -13,7 +13,14 @@ export default function AboutUsPage() {
 
   return (
     <PageLayout header="ABOUT US">
-      <section className="flex flex-col gap-5">
+      <section
+        className="flex flex-col gap-5"
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           {aboutUsData.title}
         </h2>
@@ -23,8 +30,26 @@ export default function AboutUsPage() {
         ))}
       </section>
       <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
-        <img src={aboutUsData.image1} alt="" className="object-cover h-96" />
-        <img src={aboutUsData.image2} alt="" className="object-cover h-96" />
+        <img
+          src={aboutUsData.image1}
+          alt=""
+          className="object-cover h-96"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          data-aos-once="true"
+        />
+        <img
+          src={aboutUsData.image2}
+          alt=""
+          className="object-cover h-96"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          data-aos-once="true"
+        />
       </div>
     </PageLayout>
   );

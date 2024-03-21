@@ -20,8 +20,6 @@ export default function Nav() {
   };
   return (
     <div className="">
-      {/* <input type="checkbox" onClick={handleClick} className="cursor-pointer" /> */}
-
       <div
         onClick={handleClick}
         className="hamburger-container h-7 w-8 fixed top-6 right-6 z-[300] opacity-40 cursor-pointer"
@@ -30,21 +28,13 @@ export default function Nav() {
 
       <div className={`menu ${isOpen ? "menu-toggle " : " "}`}></div>
 
-      {/* add aos to make it appear and disapear slower */}
-      {isOpen && (
-        <div className={`flex flex-col gap-5 links `}>{navLinkEl}</div>
-      )}
+      <div
+        className={`flex flex-col gap-5 links ${
+          isOpen ? " opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {navLinkEl}
+      </div>
     </div>
   );
-}
-
-{
-  /* <div>{navLinkEl}</div>  */
-}
-
-{
-  /* <div className="flex flex-col gap-3 mt-8">
-      <Button>TAKEOUT</Button>
-                 <Button>RESERVE</Button> 
-      </div> */
 }

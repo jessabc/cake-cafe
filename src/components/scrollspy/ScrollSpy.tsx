@@ -2,7 +2,9 @@
 
 import { useLayoutEffect } from "react";
 
+// @ts-ignore
 export const ScrollSpy = ({ handleScroll }) => {
+  // @ts-ignore
   const isInViewPort = (entry, offset = 0) => {
     const rect = entry.boundingClientRect;
     return rect.top - 1 <= 0 + offset && rect.bottom >= 0 + offset;
@@ -10,6 +12,7 @@ export const ScrollSpy = ({ handleScroll }) => {
 
   useLayoutEffect(() => {
     const scrollables = document.querySelectorAll("[data-scrollspy]");
+    // @ts-ignore
     for (let scrollable of scrollables) {
       const observer = new IntersectionObserver(
         (entries) => {

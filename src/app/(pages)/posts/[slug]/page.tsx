@@ -9,11 +9,17 @@ export const metadata: Metadata = {
 
 export default function postPage({ params }: { params: { slug: string } }) {
   const thisPost = postsData.find((post) => post.slug === params.slug);
-  console.log(thisPost.image);
 
   return (
     // <!-- Blog Article -->
-    <div className="max-w-3xl pt-6 lg:pt-10 pb-12 px-5 md:px-10 mx-auto mt-20">
+    <div
+      className="max-w-3xl pt-6 lg:pt-10 pb-12 px-5 md:px-10 mx-auto mt-20"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      data-aos-once="true"
+    >
       <div className="max-w-2xl">
         {/* <!-- Avatar Media --> */}
         <div className="flex justify-between items-center mb-6">

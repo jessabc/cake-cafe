@@ -13,7 +13,7 @@ export default function Footer() {
   const today = new Date().getDay();
 
   return (
-    <div className="bg-violet-300 w-full flex flex-col gap-10 items-center py-10 text-center">
+    <div className="bg-gradient-to-r from-violet-200 to-violet-300  w-full flex flex-col gap-10 items-center py-10 text-center">
       {/* links */}
       {/* <div className="flex flex-col items-center border-solid border-t-2 border-b-2 w-full border-violet-900 md:flex-row gap-3 py-3 md:w-[calc(100%-5rem)] md:gap-5">
         {linkEl}

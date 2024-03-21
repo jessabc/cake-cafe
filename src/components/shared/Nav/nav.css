@@ -9,20 +9,15 @@
 
 .menu {
   position: fixed;
-  /* position: absolute; */
-
   right: 0px;
   top: -100px;
   z-index: 100;
   width: 100px;
   height: 200px;
   background: #fff;
-  /* background: #ffffff; */
-  /* border-radius: 200% 0% 0% 0%; */
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-  /* cursor: pointer; */
   border-radius: 200px 0px 0px 200px;
   -moz-border-radius: 200px 0px 0px 200px;
   -webkit-border-radius: 200px 0px 0px 200px;
@@ -92,61 +87,38 @@
 .links {
   z-index: 200;
   position: fixed;
-  /* position: absolute; */
-  top: 40%; /* position the top  edge of the element at the middle of the parent */
-  left: 50%; /* position the left edge of the element at the middle of the parent */
-
-  /* top: 50vh;
-  left: 50vw; */
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /* opacity: 0; */
-  -webkit-transition: 1s 0s ease-in-out;
-  transition: 1s 0s ease-in-out;
-}
-
-/* label input:checked + .menu + ul {
-  opacity: 1;
-} */
-
-/* label ul {
-  z-index: 200;
-  /* position: fixed; */
-/* position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  opacity: 0;
   -webkit-transition: 1s 0s ease-in-out;
   transition: 1s 0s ease-in-out;
-}  */
+}
 
-/* ///// */
+/* https://alvarotrigo.com/blog/css-text-animations/ */
+.animate-character:hover {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #c38fd8 0%,
+    #7c3aed 29%,
+    #a33aed 67%,
+    #d43aed 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
 
-/* label input {
-  display: none;
-} */
-
-/* opens and closes */
-/* label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #28e916, 0 0 0 100vh #10d3c3;
-  border-radius: 0;
-} */
-
-/* label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-} */
-
-/* label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-} */
-
-/* label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-} */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

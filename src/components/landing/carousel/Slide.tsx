@@ -1,8 +1,8 @@
 import React from "react";
-import { Slide } from "@/types/types";
+import { ISlide } from "@/types/types";
 
 interface Props {
-  slide: Slide;
+  slide: ISlide;
 }
 
 export default function Slide({ slide }: Props) {

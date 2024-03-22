@@ -7,10 +7,10 @@ export interface ITopSectionCard {
   link: string;
 }
 
-export type Slide = {
+export interface ISlide {
   image: string;
   text: string;
-};
+}
 
 export type Post = {
   id: number;

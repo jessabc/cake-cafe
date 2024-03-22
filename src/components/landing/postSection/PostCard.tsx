@@ -29,7 +29,7 @@ export default function PostCard({ post }: Props) {
         <div>
           <img
             src={post.image}
-            alt=""
+            alt="dessert image"
             className="object-cover w-full h-56 rounded-tl-lg rounded-tr-lg"
           />
         </div>

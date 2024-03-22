@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* hours */}
         <div>
-          <p className="font-semibold">Today's hours</p>
+          <p className="font-semibold">Today&apos;s hours</p>
           <p>
             {hours[today].open} PM - {hours[today].close} PM
           </p>

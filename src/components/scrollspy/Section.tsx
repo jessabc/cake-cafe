@@ -19,7 +19,7 @@ export default function Section({ section }: Props) {
       data-aos-once="true"
     >
       <div>
-        <img src={section.svg} alt="" className="" />
+        <img src={section.svg} alt={section.header + " image"} className="" />
       </div>
 
       <div className="mb-5 ">

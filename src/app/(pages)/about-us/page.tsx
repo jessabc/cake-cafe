@@ -35,7 +35,7 @@ export default function AboutUsPage() {
         <div className="flex flex-col">
           <img
             src={aboutUsData.image1}
-            alt=""
+            alt="dessert image"
             className="object-cover h-96 rounded-lg"
             data-aos="fade-right"
             data-aos-offset="200"
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
         <div className="flex flex-col">
           <img
             src={aboutUsData.image2}
-            alt=""
+            alt="dessert image"
             className="object-cover h-96 rounded-lg"
             data-aos="fade-left"
             data-aos-offset="200"

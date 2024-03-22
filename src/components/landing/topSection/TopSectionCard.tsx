@@ -31,6 +31,7 @@ export default function TopSectionCard({ card, index }: Props) {
         <img
           src={card.image}
           className="object-cover w-full sm:h-96 lg:h-72 rounded-lg"
+          alt="dessert image"
         />
       </div>
 

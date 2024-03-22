@@ -30,7 +30,7 @@ export default function postPage({ params }: { params: { slug: string } }) {
                 <img
                   className="size-12 rounded-full"
                   src={thisPost?.authorImage}
-                  alt="Image Description"
+                  alt="desert image"
                 />
               </div>
               <div className="grow">
@@ -72,7 +72,7 @@ export default function postPage({ params }: { params: { slug: string } }) {
                 <img
                   className="object-cover h-96 "
                   src={`/${thisPost?.image}`}
-                  alt="Image Description"
+                  alt="dessert image"
                 />
               </div>
             </figure>

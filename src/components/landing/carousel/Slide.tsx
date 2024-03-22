@@ -17,7 +17,7 @@ export default function Slide({ slide }: Props) {
       >
         <img
           src={slide.image}
-          alt=""
+          alt="dessert image"
           className="absolute -top-20 opacity-80 "
         />
         <span className="self-center text-4xl transition duration-700 absolute ml-auto mr-auto left-0 right-0 text-center text-violet-100 tracking-widest font-bold">

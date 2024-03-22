@@ -71,7 +71,7 @@ export default function HoursLocationPage() {
           <div className="flex flex-col">
             <img
               src={"image28.jpg"}
-              alt=""
+              alt="dessert image"
               className="object-cover h-96 rounded-lg"
               data-aos="fade-right"
               data-aos-offset="200"
@@ -84,7 +84,7 @@ export default function HoursLocationPage() {
           <div className="flex flex-col">
             <img
               src={"image29.jpg"}
-              alt=""
+              alt="dessert image"
               className="object-cover h-96 rounded-lg"
               data-aos="fade-left"
               data-aos-offset="200"

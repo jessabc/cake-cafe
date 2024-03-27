@@ -18,7 +18,7 @@ export default function PostCard({ post }: Props) {
   return (
     <Link
       href={`/posts/${post.slug}`}
-      className="hover:-translate-y-3 duration-700"
+      className="md:hover:-translate-y-3 duration-700"
     >
       <Card
         data-aos="fade-zoom-in"

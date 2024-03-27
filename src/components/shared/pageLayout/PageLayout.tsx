@@ -17,7 +17,7 @@ export default function PageLayout({ header, children }: Props) {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <h2 className="text-4xl font-bold  text-center mt-10 text-violet-50 tracking-widest drop-shadow-xl">
+        <h2 className="text-2xl md:text-4xl font-bold  text-center mt-10 text-violet-50 tracking-widest drop-shadow-xl">
           {header}
         </h2>
       </div>

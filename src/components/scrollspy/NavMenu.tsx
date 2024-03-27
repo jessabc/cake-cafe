@@ -84,7 +84,7 @@ export const WithNavMenu = ({ children, selector }) => {
   return (
     <div className="flex flex-col md:flex-row gap-5">
       <ScrollSpy handleScroll={onScrollUpdate} />
-      <div className="relative">
+      <div className="relative hidden md:block">
         <NavMenu options={options} />
       </div>
       <div className="flex-1">{children}</div>

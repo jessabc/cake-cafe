@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import PrelineScript from "./components/PrelineScript";
@@ -6,21 +7,24 @@ import Footer from "@/components/shared/footer/Footer";
 import Logo from "@/components/shared/Logo";
 import Nav from "@/components/shared/Nav/Nav";
 import { AOSInit } from "../lib/aos";
+import MobNav from "@/components/shared/Nav/MobNav";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "CAKE&CO",
-  description: "Cupcake ipsum dolor sit amet toffee",
-};
+// export const metadata: Metadata = {
+//   title: "CAKE&CO",
+//   description: "Cupcake ipsum dolor sit amet toffee",
+// };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let [isOpen, setIsOpen] = useState(false);
   return (
-    <html lang="en">
+    <html lang="en" className={`${isOpen ? "pr-[80px]" : ""}`}>
       <AOSInit />
       <body
         className={` ${inter.className} overflow-x-hidden overflow-y-auto
@@ -36,7 +40,13 @@ export default function RootLayout({
           <div className=" fixed z-50 pt-2 pl-4 text-violet-600 ">
             <Logo />
           </div>
-          <Nav />
+          <div className="hidden md:block">
+            <Nav />
+          </div>
+
+          <div className="md:hidden">
+            <MobNav isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
         </div>
 
         <div className="">{children}</div>

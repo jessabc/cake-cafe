@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import "./nav.css";
-import MobNav from "./MobNav";
 
 // https://alvarotrigo.com/blog/hamburger-menu-css/
 // 10. Full Screen Morphing Hamburger Menu
@@ -38,9 +37,6 @@ export default function Nav() {
         >
           {navLinkEl}
         </div>
-      </div>
-      <div className="md:hidden">
-        <MobNav />
       </div>
     </>
   );

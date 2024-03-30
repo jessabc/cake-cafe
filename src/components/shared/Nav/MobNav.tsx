@@ -1,10 +1,15 @@
+"use client";
+
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import NavLink from "./NavLink";
 
-export default function MobNav() {
-  let [isOpen, setIsOpen] = useState(false);
+interface Props {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+export default function MobNav({ isOpen, setIsOpen }: Props) {
   function closeModal() {
     setIsOpen(false);
   }
@@ -21,8 +26,12 @@ export default function MobNav() {
 
   return (
     <>
-      <div className="fixed top-4 right-5 z-[300]  ">
-        <button type="button" onClick={openModal} className="text-violet-600">
+      <div className="fixed flex w-screen  top-3 z-10">
+        <button
+          type="button"
+          onClick={openModal}
+          className="text-violet-600 ml-auto pr-5"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="38"

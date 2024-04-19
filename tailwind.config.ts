@@ -77,7 +77,7 @@ const config = {
       backgroundImage: {
         "hero-one": "url('/image21.jpg')",
         "hero-two": "url('/image28.jpg')",
-        "hero-three": "url('/image29.jpg')",
+        "hero-three": "url('/image24.jpg')",
       },
     },
   },

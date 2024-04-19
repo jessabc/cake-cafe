@@ -73,11 +73,12 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-    },
-    backgroundImage: {
-      "hero-one": "url('/image21.jpg')",
-      "hero-two": "url('/image28.jpg')",
-      "hero-three": "url('/image29.jpg')",
+
+      backgroundImage: {
+        "hero-one": "url('/image21.jpg')",
+        "hero-two": "url('/image28.jpg')",
+        "hero-three": "url('/image29.jpg')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("preline/plugin")],

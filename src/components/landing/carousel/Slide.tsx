@@ -1,29 +1,20 @@
-import React from "react";
-import { ISlide } from "@/types/types";
+// import React from "react";
+// import { ISlide } from "@/types/types";
 
-interface Props {
-  slide: ISlide;
-}
+// interface Props {
+//   slide: ISlide;
+// }
 
-export default function Slide({ slide }: Props) {
-  return (
-    <div className="hs-carousel-slide ">
-      <div
-        className="flex justify-center h-full bg-violet-500 p-6 relative"
-        data-aos="fade-zoom-in"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="600"
-      >
-        <img
-          src={slide.image}
-          alt="dessert image"
-          className="absolute -top-20 opacity-80 "
-        />
-        <span className="self-center text-4xl transition duration-700 absolute ml-auto mr-auto left-0 right-0 text-center text-violet-100 tracking-widest font-bold">
-          {slide.text}
-        </span>
-      </div>
-    </div>
-  );
-}
+// export default function Slide({ slide }: Props) {
+//   console.log(slide);
+//   return (
+//     <div
+//       className={`hs-carousel-slide bg-${slide.bgName} h-screen bg-violet-500 flex justify-center items-center`}
+//     >
+
+//       <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+//         {slide.text}
+//       </span>
+//     </div>
+//   );
+// }

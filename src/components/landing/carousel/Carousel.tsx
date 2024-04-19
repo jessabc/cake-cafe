@@ -1,12 +1,7 @@
 import React from "react";
 import { carouselData } from "@/data/carouselData";
-import Slide from "./Slide";
 
 export default function Carousel() {
-  const slideEl = carouselData.map((slide, index) => (
-    <Slide key={index} slide={slide} />
-  ));
-
   return (
     // <!-- Slider -->
     <div
@@ -18,7 +13,28 @@ export default function Carousel() {
     >
       <div className="hs-carousel relative overflow-hidden w-full h-screen bg-white ">
         <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-          {slideEl}
+          {/* slides - doesnt work as a component? */}
+          <div
+            className={`hs-carousel-slide bg-hero-one h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center `}
+          >
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+              cake loves dreaming
+            </span>
+          </div>
+          <div
+            className={`hs-carousel-slide bg-hero-two h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center`}
+          >
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+              citrus hearts sugar
+            </span>
+          </div>
+          <div
+            className={`hs-carousel-slide bg-hero-three h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center`}
+          >
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+              macaroons in love
+            </span>
+          </div>
         </div>
       </div>
 

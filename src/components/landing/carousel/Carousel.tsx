@@ -17,21 +17,21 @@ export default function Carousel() {
           <div
             className={`hs-carousel-slide bg-hero-one h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center `}
           >
-            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-white py-3">
               cake loves dreaming
             </span>
           </div>
           <div
             className={`hs-carousel-slide bg-hero-two h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center`}
           >
-            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-white py-3">
               citrus hearts sugar
             </span>
           </div>
           <div
             className={`hs-carousel-slide bg-hero-three h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center`}
           >
-            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-violet-100 py-3">
+            <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-white py-3">
               macaroons in love
             </span>
           </div>

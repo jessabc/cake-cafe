@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    './node_modules/preline/preline.js',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./node_modules/preline/preline.js",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -74,11 +74,13 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    backgroundImage: {
+      "hero-one": "url('/image21.jpg')",
+      "hero-two": "url('/image28.jpg')",
+      "hero-three": "url('/image29.jpg')",
+    },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require('preline/plugin'),
-  ],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("preline/plugin")],
+} satisfies Config;
 
-export default config
+export default config;

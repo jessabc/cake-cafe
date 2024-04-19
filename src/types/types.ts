@@ -10,6 +10,7 @@ export interface ITopSectionCard {
 export interface ISlide {
   image: string;
   text: string;
+  bgName: string;
 }
 
 export type Post = {

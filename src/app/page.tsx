@@ -6,12 +6,12 @@ import TopSection from "@/components/landing/topSection/TopSection";
 export default function Home() {
   return (
     <main className="">
-      <div className="hidden md:block">
+      <div className="">
         <Carousel />
       </div>
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <MobHero />
-      </div>
+      </div> */}
 
       <div className=" mx-5 md:mx-10">
         <TopSection />

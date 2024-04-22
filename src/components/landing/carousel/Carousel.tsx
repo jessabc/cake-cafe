@@ -1,5 +1,4 @@
 import React from "react";
-import { carouselData } from "@/data/carouselData";
 
 export default function Carousel() {
   return (

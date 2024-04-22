@@ -2,6 +2,7 @@ import React from "react";
 import { aboutUsData } from "@/data/aboutUsData";
 import PageLayout from "@/components/shared/pageLayout/PageLayout";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "CAKE&CO | ABOUT US",
@@ -33,10 +34,13 @@ export default function AboutUsPage() {
       </section>
       <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
         <div className="flex flex-col">
-          <img
+          <Image
             src={aboutUsData.image1}
             alt="dessert image"
-            className="object-cover h-96 rounded-lg"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="object-cover h-96 rounded-lg w-full"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
@@ -48,10 +52,13 @@ export default function AboutUsPage() {
           </figure>
         </div>
         <div className="flex flex-col">
-          <img
+          <Image
             src={aboutUsData.image2}
+            width="0"
+            height="0"
+            sizes="100vw"
             alt="dessert image"
-            className="object-cover h-96 rounded-lg"
+            className="object-cover h-96 rounded-lg w-full"
             data-aos="fade-left"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"

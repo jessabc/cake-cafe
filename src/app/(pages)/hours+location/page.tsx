@@ -2,6 +2,7 @@ import PageLayout from "@/components/shared/pageLayout/PageLayout";
 import React from "react";
 import { address, hours } from "@/data/footerData";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "CAKE&CO | HOURS + LOCATION",
@@ -69,10 +70,13 @@ export default function HoursLocationPage() {
         {/* images */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
           <div className="flex flex-col">
-            <img
-              src={"image28.jpg"}
+            <Image
+              src={"/image28.jpg"}
               alt="dessert image"
-              className="object-cover h-96 rounded-lg"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="object-cover h-96 rounded-lg w-full"
               data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
@@ -82,10 +86,13 @@ export default function HoursLocationPage() {
             <figure className="text-xs">Photo by from Unsplash</figure>
           </div>
           <div className="flex flex-col">
-            <img
-              src={"image29.jpg"}
+            <Image
+              src={"/image29.jpg"}
               alt="dessert image"
-              className="object-cover h-96 rounded-lg"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="object-cover h-96 rounded-lg w-full"
               data-aos="fade-left"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"

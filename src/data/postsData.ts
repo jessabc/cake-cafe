@@ -1,7 +1,7 @@
 export const postsData = [
   {
     id: 1,
-    image: "image14.jpg",
+    image: "/image14.jpg",
     attribute: "Bruna Branco",
     date: "January 4, 2024",
     title: "SCRUMPTIOUS SUGARY DELICIOUS DESSERTS. CUPCAKES DREAM!",
@@ -10,12 +10,11 @@ export const postsData = [
     slug: "jelly",
     author: "Leyla Ludic",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author2.jpg",
   },
   {
     id: 2,
-    image: "image16.jpg",
+    image: "/image16.jpg",
     attribute: "Diliara Garifullina",
     date: "January 28, 2024",
     title: "OAT SUGARY JELLY DESSERTS. PIE DREAM!",
@@ -24,40 +23,37 @@ export const postsData = [
     slug: "brownie",
     author: "Leyla Ludic",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author2.jpg",
   },
   {
     id: 3,
-    image: "image15.jpg",
+    image: "/image15.jpg",
     attribute: "Heather Barnes",
     date: "February 5, 2024",
     title: "SOUFFLE SUGARY CARROT DESSERTS. DANISH DREAM!",
     paragraph:
       "Cupcake ipsum dolor sit amet toffee. Candy danish jelly beans chupa chups dragée cheesecake. Danish topping gummies candy oat cake tart croissant. Halvah pie soufflé tiramisu soufflé chocolate chocolate. Cookie brownie carrot cake brownie sugar plum. Sugar plum bonbon chocolate pastry tootsie roll cake topping chocolate cake. Cake topping cookie halvah sweet roll toffee sweet.",
     slug: "sweet",
-    author: "Leyla Ludic",
+    author: "Max Smith",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author1.jpg",
   },
   {
     id: 4,
-    image: "image17.jpg",
+    image: "/image17.jpg",
     attribute: "Brooke Lark",
     date: "February 19, 2024",
     title: "BROWNIE SUGARY TOFFEE DESSERTS. TIRAMISU DREAM!",
     paragraph:
       "Cupcake ipsum dolor sit amet toffee. Candy danish jelly beans chupa chups dragée cheesecake. Danish topping gummies candy oat cake tart croissant. Halvah pie soufflé tiramisu soufflé chocolate chocolate. Cookie brownie carrot cake brownie sugar plum. Sugar plum bonbon chocolate pastry tootsie roll cake topping chocolate cake. Cake topping cookie halvah sweet roll toffee sweet.",
     slug: "sugar",
-    author: "Leyla Ludic",
+    author: "Max Smith",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author1.jpg",
   },
   {
     id: 5,
-    image: "image19.jpg",
+    image: "/image19.jpg",
     attribute: "Dessy Dimcheva",
     date: "March 2, 2024",
     title: "TART SUGARY CROISSANT DESSERTS. COOKIE TOPPING!",
@@ -66,21 +62,19 @@ export const postsData = [
     slug: "chocolate",
     author: "Leyla Ludic",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author2.jpg",
   },
   {
     id: 6,
-    image: "image20.jpg",
+    image: "/image20.jpg",
     attribute: "Caramel",
     date: "March 25, 2024",
     title: "CUPCAKE SUGARY CANDY CHOCOLATE. SWEET TOFFEE!",
     paragraph:
       "Cupcake ipsum dolor sit amet toffee. Candy danish jelly beans chupa chups dragée cheesecake. Danish topping gummies candy oat cake tart croissant. Halvah pie soufflé tiramisu soufflé chocolate chocolate. Cookie brownie carrot cake brownie sugar plum. Sugar plum bonbon chocolate pastry tootsie roll cake topping chocolate cake. Cake topping cookie halvah sweet roll toffee sweet.",
     slug: "cupcake",
-    author: "Leyla Ludic",
+    author: "Max Smith",
     readTime: "8",
-    authorImage:
-      "https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    authorImage: "/author2.jpg",
   },
 ];

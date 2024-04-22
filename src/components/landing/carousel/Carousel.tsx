@@ -25,7 +25,7 @@ export default function Carousel() {
             className={`hs-carousel-slide bg-hero-two h-screen bg-violet-500 flex justify-center items-center bg-cover bg-center`}
           >
             <span className=" text-4xl  text-violet-600 tracking-widest font-bold text-center px-4 bg-white py-3">
-              citrus hearts sugar
+              fruits hearts sugar
             </span>
           </div>
           <div

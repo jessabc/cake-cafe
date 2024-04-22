@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { Post } from "@/types/types";
+import Image from "next/image";
 
 interface Props {
   post: Post;
@@ -27,9 +28,12 @@ export default function PostCard({ post }: Props) {
         data-aos-duration="600"
       >
         <div>
-          <img
+          <Image
             src={post.image}
             alt="dessert image"
+            width="0"
+            height="0"
+            sizes="100vw"
             className="object-cover w-full h-56 rounded-tl-lg rounded-tr-lg"
           />
         </div>

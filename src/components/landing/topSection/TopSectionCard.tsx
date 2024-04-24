@@ -28,13 +28,18 @@ export default function TopSectionCard({ card, index }: Props) {
         data-aos-duration="600"
         data-aos-once="true"
       >
-        <Image
+        {/* <Image
           src={card.image}
           className="object-cover w-full sm:h-96 lg:h-72 rounded-lg"
           alt="dessert image"
           width="0"
           height="0"
           sizes="100vw"
+        /> */}
+        <img
+          src={card.image}
+          className="object-cover w-full sm:h-96 lg:h-72 rounded-lg"
+          alt="dessert image"
         />
       </div>
 
@@ -47,12 +52,17 @@ export default function TopSectionCard({ card, index }: Props) {
         data-aos-once="true"
       >
         <div className="sm:hidden">
-          <Image
+          {/* <Image
             src={card.image}
             alt="dessert image"
             width="0"
             height="0"
             sizes="100vw"
+            className="object-cover w-full h-56"
+          /> */}
+          <img
+            src={card.image}
+            alt="dessert image"
             className="object-cover w-full h-56"
           />
         </div>

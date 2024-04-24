@@ -70,7 +70,7 @@ export default function HoursLocationPage() {
         {/* images */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-5 mt-5">
           <div className="flex flex-col">
-            <Image
+            {/* <Image
               src={"/image28.jpg"}
               alt="dessert image"
               width="0"
@@ -82,16 +82,36 @@ export default function HoursLocationPage() {
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
               data-aos-once="true"
+            /> */}
+            <img
+              src={"/image28.jpg"}
+              alt="dessert image"
+              className="object-cover h-96 rounded-lg w-full"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-once="true"
             />
             <figure className="text-xs">Photo by from Unsplash</figure>
           </div>
           <div className="flex flex-col">
-            <Image
+            {/* <Image
               src={"/image29.jpg"}
               alt="dessert image"
               width="0"
               height="0"
               sizes="100vw"
+              className="object-cover h-96 rounded-lg w-full"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-once="true"
+            /> */}
+            <img
+              src={"/image29.jpg"}
+              alt="dessert image"
               className="object-cover h-96 rounded-lg w-full"
               data-aos="fade-left"
               data-aos-offset="200"

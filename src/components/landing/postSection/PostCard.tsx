@@ -28,12 +28,17 @@ export default function PostCard({ post }: Props) {
         data-aos-duration="600"
       >
         <div>
-          <Image
+          {/* <Image
             src={post.image}
             alt="dessert image"
             width="0"
             height="0"
             sizes="100vw"
+            className="object-cover w-full h-56 rounded-tl-lg rounded-tr-lg"
+          /> */}
+          <img
+            src={post.image}
+            alt="dessert image"
             className="object-cover w-full h-56 rounded-tl-lg rounded-tr-lg"
           />
         </div>

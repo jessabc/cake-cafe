@@ -30,12 +30,17 @@ export default function postPage({ params }: { params: { slug: string } }) {
             <div className="flex justify-between items-center mb-6">
               <div className="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
                 <div className="flex-shrink-0">
-                  <Image
+                  {/* <Image
                     className="object-cover w-14 h-14 rounded-full "
                     src={thisPost.authorImage}
                     width="0"
                     height="0"
                     sizes="100vw"
+                    alt="author image"
+                  /> */}
+                  <img
+                    className="object-cover w-14 h-14 rounded-full "
+                    src={thisPost.authorImage}
                     alt="author image"
                   />
                 </div>
@@ -76,12 +81,17 @@ export default function postPage({ params }: { params: { slug: string } }) {
             </div>
             <figure>
               <div className="flex justify-center items-center">
-                <Image
+                {/* <Image
                   className="object-cover h-96 w-full"
                   src={`/${thisPost?.image}`}
                   width="0"
                   height="0"
                   sizes="100vw"
+                  alt="dessert image"
+                /> */}
+                <img
+                  className="object-cover h-96 w-full"
+                  src={`${thisPost?.image}`}
                   alt="dessert image"
                 />
               </div>
